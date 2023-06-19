@@ -68,7 +68,7 @@
                         beginAtZero: true,
                             ticks: {
                             callback: function (value, index, values) {
-                                return value + ' 百萬人';
+                                return value + ' 千萬人';
                             }
                         },
                     }
@@ -79,7 +79,7 @@
               label: function (tooltipItem, data) {
                 var label = myChart.data.label;
                 var value = myChart.data.datasets[tooltipItem.datasetIndex].data[tooltipItem.dataIndex]
-                return ': ' + value + ' 百萬人';
+                return ': ' + value + ' 千萬人';
               }
             }
           }
